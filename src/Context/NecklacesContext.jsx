@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import { GetNecklacesData } from "../Service/NecklacesService.service";
 
 
 const NecklacesContext=createContext();

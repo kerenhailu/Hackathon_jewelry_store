@@ -1,9 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Home from "./Components/Pages/Home/Home.Component"
 import NavBar from "./Components/Parts/NavBar/NavBar.Component";
-// import NavBar from "./Components/Parts/NavBar/NavBar.Component";
-// import AppRouter from "./AppRouter/AppRouter.component";
+import {AppRouter} from "./AppRouter/AppRouter.component";
+import Footer from "./Components/Parts/Footer/Footer.Component";
+
 
 
 
@@ -11,8 +10,9 @@ function App() {
   return (
     <div className="App">
       <h1>App</h1>
-      <Home/>
+      <AppRouter/>
       <NavBar />
+      <Footer/>
     </div>
   );
 }

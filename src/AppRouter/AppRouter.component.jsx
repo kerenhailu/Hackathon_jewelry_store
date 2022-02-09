@@ -1,10 +1,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "../Components/Pages/Home";
+import Home from "../Components/Pages/Home/Home.Component";
 
-const AppRouter = () => {
+export const AppRouter = () => {
   return (
     <div>
-      <h1>AppRouter</h1>
       <BrowserRouter>
         <Routes>
           <Route exact path="/" element={<Home />} />
@@ -13,4 +12,4 @@ const AppRouter = () => {
     </div>
   );
 };
-export default AppRouter;
+
