@@ -1,12 +1,15 @@
+import { useContext } from "react";
+import BraceletsContextProvider from "../../../../Context/BraceletsContext";
+import OneBraceletCard from "./OneBraceletCard.Component";
+
 const BraceletsCards = () => {
-    const { Bracelets, setBracelets } = useContext(ContextProviderPants);
-    return (
-      <div>
-        {pants.map((itemBracelet) => (
-          <CardPants itemBracelet={itemBracelet} />
-        ))}
-      </div>
-    );
-  };
-  export default BraceletsCards;
-  
+  const { Bracelets, setBracelets } = useContext(BraceletsContextProvider);
+  return (
+    <div>
+      {Bracelets.map((itemBracelet) => (
+        <OneBraceletCard itemBracelet={itemBracelet} />
+      ))}
+    </div>
+  );
+};
+export default BraceletsCards;
