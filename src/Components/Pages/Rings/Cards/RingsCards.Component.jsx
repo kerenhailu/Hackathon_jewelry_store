@@ -1,9 +1,9 @@
 import { useContext } from "react";
-import RingsContextProvider from "../../../../Context/RingsContext";
+import {RingsContext} from "../../../../Context/RingsContext";
 import OneRingCard from "./OneRingCard.Component";
 
 const RingsCards = () => {
-    const { rings,setRings } = useContext(RingsContextProvider);
+    const { rings,setRings } = useContext(RingsContext);
     return (
       <div>
         {rings.map((itemRing) => (

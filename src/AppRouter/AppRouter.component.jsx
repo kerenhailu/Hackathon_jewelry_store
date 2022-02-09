@@ -1,12 +1,16 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Bracelets from "../Components/Pages/Bracelets/Bracelets.Component";
 import Home from "../Components/Pages/Home/Home.Component";
+import NavBar from "../Components/Parts/NavBar/NavBar.Component";
 
 export const AppRouter = () => {
   return (
     <div>
       <BrowserRouter>
+      <NavBar/>
         <Routes>
           <Route exact path="/" element={<Home />} />
+          <Route  path="/Bracelets" element={<Bracelets/>} />
         </Routes>
       </BrowserRouter>
     </div>

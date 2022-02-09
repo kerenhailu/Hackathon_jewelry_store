@@ -2,15 +2,17 @@ import { createContext, useEffect, useState } from "react";
 import { GetWatchesData } from "../Service/WatchesService.service";
 
 
-const  WatchesContext=createContext();
+export const  WatchesContext=createContext();
 
 const WatchesContextProvider=({Children})=>{
-    const [watches,setWatches]=useState(WatchesContext);
+    const [watches,setWatchesData]=useState([]);
     useEffect(()=>{
-    GetWatchesData().then((res)=>setWatches(res.WatchesList))
+    GetWatchesData()
+    .then((res)=>setWatchesData(res.WatchesList))
+    console.log();
     },[])
     return(
-    <WatchesContext.Provider value={{watches,setWatches}}>
+    <WatchesContext.Provider value={{watches,setWatchesData}}>
         {Children}
     </WatchesContext.Provider>
     )

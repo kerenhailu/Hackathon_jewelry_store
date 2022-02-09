@@ -4,18 +4,11 @@ import { Link } from "react-router-dom";
 const NavBar = () => {
   return (
     <div>
-      {/* <Link to="/Bracelets">
-        <button>Bracelets</button> </Link>
-      <Link to="/Necklaces">
-        <button>Necklaces</button>
-      </Link>
-      <Link to="/Rings">
-        <button>Rings</button>
-      </Link>
-      <Link to="/Watches">
-        <button>Watches</button>
-      </Link> */}
-      NavBar
+         <Link to="/">
+        <button type="button">home</button></Link>
+        <Link to="/Bracelets">
+        <button type="button">bracelets</button></Link>
+      
     </div>
   );
 };
