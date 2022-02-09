@@ -1,4 +1,5 @@
 import BraceletsCards from "./Cards/BraceletsCards.Component";
+import {BraceletsContext} from "../../../Context/BraceletsContext";
 
 const Bracelets = () => {
   return (
@@ -7,3 +8,4 @@ const Bracelets = () => {
     </BraceletsContext>
   );
 };
+export default Bracelets;
