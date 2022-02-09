@@ -6,7 +6,7 @@ const RingsCards = () => {
     const { rings,setRings } = useContext(RingsContextProvider);
     return (
       <div>
-        {pants.map((itemRing) => (
+        {rings.map((itemRing) => (
           <OneRingCard itemRing={itemRing} />
         ))}
       </div>
