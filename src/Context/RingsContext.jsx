@@ -1,6 +1,5 @@
 import { createContext, useEffect, useState } from "react";
 
-
 const RingsContext=createContext();
 
 const RingsContextProvider=({Children})=>{
