@@ -1,4 +1,4 @@
-const BasicUrl = "https://localhost:44397/api/";
+const BasicUrl = "https://jewelrystore.azurewebsites.net/api/Necklaces";
 
 export const GetNecklacesData = async () => {
   try {
