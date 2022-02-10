@@ -20,7 +20,8 @@ export const AppRouter = () => {
             <Route path="/Bracelets" element={<Bracelets />} />
             {/* <Route  path="/Rings" element={<Rings/>} /> */}
             <Route path="/Watches" element={<Watches />} />
-            {/* This is Main Content. */}
+{/* This is Main Content. */}
+
           </Routes>
         </div>
         <Footer />
