@@ -12,6 +12,8 @@ const OneRingCard = ({ itemRing }) => {
           <h5>Gender :{itemRing.Gender}</h5>
           <h5>Price :{itemRing.Price}</h5>
           <img src={itemRing.Img} width="80px" height="80px" />
+          <button>show more</button>
+          <button>buy</button>
         </section>
       </div>
     );
