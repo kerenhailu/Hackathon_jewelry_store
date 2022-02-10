@@ -5,6 +5,7 @@ import Necklaces from "../Components/Pages/Necklaces/Necklaces.Component";
 import Rings from "../Components/Pages/Rings/Rings.Component";
 import Watches from "../Components/Pages/Watches/Watches.Component";
 import NavBar from "../Components/Parts/NavBar/NavBar.Component";
+import Footer from "../Components/Parts/Footer/Footer.Component"
 
 export const AppRouter = () => {
   return (
@@ -18,6 +19,7 @@ export const AppRouter = () => {
           <Route  path="/Watches" element={<Watches/>} />
           <Route  path="/Necklaces" element={<Necklaces/>} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
