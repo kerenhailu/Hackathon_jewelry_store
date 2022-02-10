@@ -2,10 +2,8 @@ import { Link } from "react-router-dom";
 
 
 const Footer = () => {
-
   return (
     <div>
-      <img src="../../../Img/contact.png"/>
       <footer>
         <article class="partA">
           <Link to="/">
