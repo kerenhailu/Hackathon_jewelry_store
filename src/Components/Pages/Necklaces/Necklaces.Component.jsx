@@ -1,5 +1,5 @@
 import NecklacesCards from "./Cards/NecklacesCards.Components";
-import NecklacesContextProvider, {NecklacesContext} from "../../../Context/NecklacesContext";
+import NecklacesContextProvider from "../../../Context/NecklacesContext";
 
 const Necklaces = () => {
   return (
