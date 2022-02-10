@@ -7,6 +7,8 @@ const BraceletsCards = () => {
   console.log(bracelets);
   return (
     <div>
+      <h1>Our Bracelets</h1>
+
       {bracelets.map((itemBracelet) => (
         <OneBraceletCard itemBracelet={itemBracelet} />
       ))}

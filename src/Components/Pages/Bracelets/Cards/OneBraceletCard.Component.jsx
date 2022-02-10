@@ -2,7 +2,6 @@ const OneBraceletCard = ({ itemBracelet }) => {
     return (
       <div>
         <section>
-        <h1>Bracelet Card !!:</h1>
         <h3>Has_Warranty :{itemBracelet.Has_Warranty}</h3>
           <h5>Company :{itemBracelet.Company}</h5>
           <h3>Waterproof :{itemBracelet.Waterproof}</h3>
