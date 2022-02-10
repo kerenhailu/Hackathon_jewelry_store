@@ -1,5 +1,5 @@
 import RingsCards from "./Cards/RingsCards.Component";
-import RingsContextProvider, {RingsContext} from "../../../Context/RingsContext";
+import RingsContextProvider from "../../../Context/RingsContext";
 
 const Rings = () => {
   return (
