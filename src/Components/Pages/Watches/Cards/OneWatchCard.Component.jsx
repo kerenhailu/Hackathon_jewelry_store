@@ -1,4 +1,5 @@
 const OneWatchCard = ({ itemWatch }) => {
+
   return (
     <div className="card">
         <img src={itemWatch.Img}/>
@@ -9,6 +10,10 @@ const OneWatchCard = ({ itemWatch }) => {
         <h5>Model :{itemWatch.Model}</h5>
         <h5>Gender :{itemWatch.Gender}</h5>
         <h5>Price :{itemWatch.Price}</h5>
+        <img src={itemWatch.Img} width="80px" height="80px" />
+        <button>show more</button>
+          <button>buy</button>
+    
     </div>
   );
 };
