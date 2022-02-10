@@ -1,11 +1,9 @@
-import NavBar from "../NavBar/NavBar.Component";
-
+import { NavbarA } from "../NavBar/NavBar.Component";
 
 const Header = ()=>{
     return(
         <div className="TheHeader">
-            <h1>I'm Header</h1>
-            <NavBar/>
+            <NavbarA/>
         </div>
     )
 }
