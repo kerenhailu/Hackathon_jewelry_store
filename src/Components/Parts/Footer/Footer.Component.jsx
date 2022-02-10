@@ -42,7 +42,7 @@ const Footer = () => {
         </article>
         <article class="partC">
           <h2>
-            we are a gruop from <br />
+            we are a group from <br />
             keren , oshri , lior , haim <br />
             we do this side in 20 hours <br />
             hope you like it
