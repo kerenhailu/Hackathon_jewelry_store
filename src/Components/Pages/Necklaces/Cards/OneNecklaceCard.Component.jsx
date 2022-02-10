@@ -12,6 +12,8 @@ const OneNecklaceCard = ({ itemNecklace }) => {
           <h5>Gender :{itemNecklace.Gender}</h5>
           <h5>Price :{itemNecklace.Price}</h5>
           <img src={itemNecklace.Img} width="80px" height="80px" />
+          <button>show more</button>
+          <button>buy</button>
         </section>
       </div>
     );
