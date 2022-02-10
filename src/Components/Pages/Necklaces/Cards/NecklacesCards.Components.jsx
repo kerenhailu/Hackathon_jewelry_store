@@ -1,12 +1,11 @@
 import { useContext } from "react";
-import NecklacesContextProvider from "../../../../Context/NecklacesContext";
+import  { NecklacesContext } from "../../../../Context/NecklacesContext";
 import OneNecklaceCard from "./OneNecklaceCard.Component";
 
 
 const NecklacesCards = () => {
-    const { Necklaces, setNecklaces } = useContext(NecklacesContextProvider);
-    return (
-      <div>
+    const { Necklaces } = useContext(NecklacesContext);
+    return (<div>
         {Necklaces.map((itemNecklaces) => (
           <OneNecklaceCard itemNecklaces={itemNecklaces} />
         ))}

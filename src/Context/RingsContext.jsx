@@ -1,15 +1,15 @@
 import { createContext, useEffect, useState } from "react";
 import {GetRingsData} from "../Service/RingsService.service";
-const RingsContext = createContext();
+export const RingsContext = createContext();
 
-const RingsContextProvider = ({ Children }) => {
-  const [rings, setRings] = useState(RingsContext);
+const RingsContextProvider = ({ children }) => {
+  const [rings, setRings] = useState([]);
   useEffect(() => {
-    GetRingsData().then((res) => setRings(res.RingsList));
+    GetRingsData().then((res) => setRings(res.RingList));
   }, []);
   return (
     <RingsContext.Provider value={{ rings, setRings }}>
-      {Children}
+      {children}
     </RingsContext.Provider>
   );
 };

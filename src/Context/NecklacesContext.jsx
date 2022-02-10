@@ -1,16 +1,17 @@
 import { createContext, useEffect, useState } from "react";
+import { GetNecklacesData } from "../Service/NecklacesService.service";
 
 
-const NecklacesContext=createContext();
+export const NecklacesContext=createContext();
 
-const NecklacesContextProvider=({Children})=>{
-    const [necklaces,setNecklaces]=useState(NecklacesContext);
+const NecklacesContextProvider=({children})=>{
+    const [necklaces,setNecklaces]=useState([]);
     useEffect(()=>{
     GetNecklacesData().then((res)=>setNecklaces(res.NecklacesList))
     },[])
     return(
     <NecklacesContext.Provider value={{necklaces,setNecklaces}}>
-        {Children}
+        {children}
     </NecklacesContext.Provider>
     )
 }

@@ -1,11 +1,11 @@
 import RingsCards from "./Cards/RingsCards.Component";
-import {RingsContext} from "../../../Context/RingsContext";
+import RingsContextProvider from "../../../Context/RingsContext";
 
 const Rings = () => {
   return (
-    <RingsContext>
+    <RingsContextProvider>
       <RingsCards />
-    </RingsContext>
+    </RingsContextProvider>
   );
 };
 export default Rings;

@@ -1,5 +1,4 @@
 
-
 const UserForm=()=>{
     return(
         <div>
@@ -17,3 +16,4 @@ const UserForm=()=>{
         </div>
     )
 }
+export default UserForm;

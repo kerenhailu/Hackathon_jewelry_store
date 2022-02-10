@@ -1,16 +1,18 @@
 import { createContext, useEffect, useState } from "react";
+import { GetBraceletsData } from "../Service/BraceletsService.service";
 
 
-const BraceletsContext=createContext();
+export const BraceletsContext=createContext();
 
-const BraceletsContextProvider=({Children})=>{
-    const [bracelets,setbracelets]=useState(BraceletsContext);
+const BraceletsContextProvider=({children})=>{
+    let [bracelets,setbracelets]=useState([]);
     useEffect(()=>{
-    GetBraceletsData().then((res)=>setbracelets(res.RingsList))
+    GetBraceletsData().then((data)=>setbracelets(data.BraceletsList))
+    console.log(bracelets)
     },[])
     return(
     <BraceletsContext.Provider value={{bracelets,setbracelets}}>
-        {Children}
+        {children}
     </BraceletsContext.Provider>
     )
 }

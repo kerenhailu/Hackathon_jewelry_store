@@ -1,11 +1,11 @@
 import NecklacesCards from "./Cards/NecklacesCards.Components";
-import {NecklacesContext} from "../../../Context/NecklacesContext";
+import NecklacesContextProvider from "../../../Context/NecklacesContext";
 
 const Necklaces = () => {
   return (
-    <NecklacesContext>
+    <NecklacesContextProvider>
       <NecklacesCards />
-    </NecklacesContext>
+    </NecklacesContextProvider>
   );
 };
 export default Necklaces;
