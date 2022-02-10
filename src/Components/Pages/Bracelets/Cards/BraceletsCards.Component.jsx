@@ -1,9 +1,8 @@
 import { useContext } from "react";
-import BraceletsContextProvider from "../../../../Context/BraceletsContext";
 import OneBraceletCard from "./OneBraceletCard.Component";
 import { BraceletsContext } from "../../../../Context/BraceletsContext";
 const BraceletsCards = () => {
-  const { bracelets, setbracelets } = useContext(BraceletsContext);
+  const { bracelets } = useContext(BraceletsContext);
   console.log(bracelets);
   return (
     <div>
