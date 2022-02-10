@@ -4,15 +4,15 @@ import { GetBraceletsData } from "../Service/BraceletsService.service";
 
 export const BraceletsContext=createContext();
 
-const BraceletsContextProvider=({Children})=>{
+const BraceletsContextProvider=({children})=>{
     let [bracelets,setbracelets]=useState([]);
     useEffect(()=>{
-    GetBraceletsData().then((res)=>setbracelets(res.BraceletsList[0]))
+    GetBraceletsData().then((data)=>setbracelets(data.BraceletsList))
     console.log(bracelets)
     },[])
     return(
     <BraceletsContext.Provider value={{bracelets,setbracelets}}>
-        {Children}
+        {children}
     </BraceletsContext.Provider>
     )
 }
