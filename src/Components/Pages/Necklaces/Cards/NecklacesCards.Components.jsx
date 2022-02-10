@@ -4,10 +4,10 @@ import OneNecklaceCard from "./OneNecklaceCard.Component";
 
 
 const NecklacesCards = () => {
-    const { Necklaces } = useContext(NecklacesContext);
-    return (<div>
-        {Necklaces.map((itemNecklaces) => (
-          <OneNecklaceCard itemNecklaces={itemNecklaces} />
+    const { necklaces } = useContext(NecklacesContext);
+    return (<div className="cardWrapper">
+        {necklaces.map((itemNecklace) => (
+          <OneNecklaceCard itemNecklace={itemNecklace} />
         ))}
       </div>
     );

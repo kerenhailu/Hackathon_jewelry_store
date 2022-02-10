@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AdmainForm from "../Components/Pages/AdminForm/AdminFrom.Componrnt";
 import Bracelets from "../Components/Pages/Bracelets/Bracelets.Component";
 import Home from "../Components/Pages/Home/Home.Component";
+import Necklaces from "../Components/Pages/Necklaces/Necklaces.Component";
 import UserForm from "../Components/Pages/UserForm/UserForm";
 // import Rings from "../Components/Pages/Rings/Rings.Component";
 import Watches from "../Components/Pages/Watches/Watches.Component";
@@ -25,6 +26,8 @@ export const AppRouter = () => {
             <Route path="/Watches" element={<Watches />} />
             <Route path="/UserFrom" element={<UserForm />} />
             <Route path="/AdminForm" element={<AdmainForm />} />
+            <Route path="/Necklaces" element={<Necklaces />} />
+
 
 {/* This is Main Content. */}
 

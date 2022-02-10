@@ -8,6 +8,7 @@ const NecklacesContextProvider=({children})=>{
     const [necklaces,setNecklaces]=useState([]);
     useEffect(()=>{
     GetNecklacesData().then((res)=>setNecklaces(res.NecklacesList))
+    console.log(necklaces);
     },[])
     return(
     <NecklacesContext.Provider value={{necklaces,setNecklaces}}>

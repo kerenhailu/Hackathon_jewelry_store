@@ -1,20 +1,15 @@
 const OneRingCard = ({ itemRing }) => {
     return (
-      <div>
-        <section>
-        <h1>Ring Card !!:</h1>
-          <h3>Has_Warranty :{itemRing.Has_Warranty}</h3>
+      <div className="card">
+        <h1>Ring Card</h1>
+          <img src={itemRing.Img} width="80px" height="80px" />
           <h5>Company :{itemRing.Company}</h5>
-          <h3>Waterproof :{itemRing.Waterproof}</h3>
-          <h5>Color :{itemRing.Color}</h5>
           <h5>Size :{itemRing.Size}</h5>
           <h5>Model :{itemRing.Model}</h5>
           <h5>Gender :{itemRing.Gender}</h5>
-          <h5>Price :{itemRing.Price}</h5>
-          <img src={itemRing.Img} width="80px" height="80px" />
-          <button>show more</button>
-          <button>buy</button>
-        </section>
+          <h5>Price :{itemRing.Price} $</h5>
+          <button className="clickShow">show more</button>
+          <button className="clickBuy">buy</button>
       </div>
     );
   };

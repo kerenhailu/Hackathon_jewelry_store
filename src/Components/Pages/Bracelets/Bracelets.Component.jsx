@@ -5,16 +5,16 @@ import { useContext } from "react";
 import Loading from "../Loading/Loading.Component";
 
 const Bracelets = () => {
-  const { isLoading } = useContext(BraceletsContext);
+  // const { isLoading } = useContext(BraceletsContext);
   return (
     <>
-    {
-      isLoading?<Loading/>:
+    
+      {/* isLoading?<Loading/>: */}
     
     <BraceletsContextProvider>
       <BraceletsCards />
       <h1>Bracelets</h1>
-    </BraceletsContextProvider>}
+    </BraceletsContextProvider>
  </> );
 };
 export default Bracelets;

@@ -6,68 +6,76 @@
     "main main main"
     "main main main"
     "ft ft ft ";
-    width: 100vw;
-    min-height: 100vh;
-    
+  width: 100vw;
+  min-height: 100vh;
 }
-.NavBar{
+.NavBar {
   grid-area: hd;
 }
-.TheHeader{
+.TheHeader {
   grid-area: hd;
   width: 100vw;
 }
 
-.TheFooter{
+.TheFooter {
   grid-area: ft;
   width: 100vw;
-
 }
-.RenderedContent{
+.RenderedContent {
   grid-area: main;
   width: 100vw;
-  background-color: rgba(255, 217, 0, 0.479);
-  display: flex; 
+  background-color: rgba(252, 251, 247, 0.945);
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
-.main{
+.main {
   grid-area: main;
   width: 100vw;
-
-
+}
+.clickShow {
+  box-shadow: 2px 2px 2px gray;
+  border: none;
 }
 
-.cardWrapper{
-  display: flex; 
+.clickBuy {
+  box-shadow: 2px 2px 2px gray;
+  border: none;
+  background-color: #8c9289;
+}
+.cardWrapper {
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  margin-top: 10vh;
 }
-.card{
+.card {
   width: 30vw;
   height: auto;
+  align-items: center;
+  margin: 10px;
+  box-shadow: gray 5px 5px 5px 5px;
 }
-.card img{
+.card img {
   width: 300px;
   height: 300px;
 }
 footer {
   padding: 2%;
-  background: linear-gradient(#b8b7b0,#f1ede8,#829079);
+  background: linear-gradient(#b8b7b0, #f1ede8, #829079);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  opacity:0.7;
+  opacity: 0.7;
   box-shadow: 10px 10px 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-
 }
 
-.partA , .partB , .partC {
+.partA,
+.partB,
+.partC {
   padding: 1%;
   width: 30vw;
 }
@@ -78,10 +86,9 @@ footer {
   text-align: center;
   margin: 0.5%;
 }
-footer ul a:hover{
+footer ul a:hover {
   color: #000;
 }
-
 
 /* .loginicon {
   position: absolute;

@@ -6,12 +6,12 @@ export const BraceletsContext=createContext();
 
 const BraceletsContextProvider=({children})=>{
     let [bracelets,setbracelets]=useState([]);
-    const [isLoading, setIsLoading] = useState(false);
+    const [isLoading, setIsLoading] = useState([]);
     useEffect(()=>{
-   setIsLoading(true);
+    setIsLoading(true);
     GetBraceletsData().then((data)=>setbracelets(data.BraceletsList))
     .finally(()=>setIsLoading(false))
-    console.log(bracelets)
+    // console.log(bracelets)
     },[])
     return(
     <BraceletsContext.Provider value={{bracelets,setbracelets,isLoading}}>
