@@ -19,6 +19,8 @@ export const NavbarA=()=>{
             <Nav.Link href="Short"><button type="button" class="btn btn-warning"> <Link to="/Rings"> Rings</Link> </button></Nav.Link>
             <Nav.Link href="Short"><button type="button" class="btn btn-warning"> <Link to="/Watches">Watches</Link> </button></Nav.Link>
             <Nav.Link href="Short"><button type="button" class="btn btn-warning"> <Link to="/Necklaces">Necklaces</Link> </button></Nav.Link>
+            <Nav.Link href="Short"><button type="button" class="btn btn-warning"> <Link to="/UserFrom">Come in</Link> </button></Nav.Link>
+            <Nav.Link href="Short"><button type="button" class="btn btn-warning"> <Link to="/AdminForm">Admin From</Link> </button></Nav.Link>
 
 
 
